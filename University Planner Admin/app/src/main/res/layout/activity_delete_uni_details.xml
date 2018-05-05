@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="510dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.s530742.universityplanneradmin.activity_delete_uni_details">
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:onClick="signout"
+        android:text="Logout" />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:text="Welcome" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="0.2"
+        android:text="University Planner"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/StateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="Choose State" />
+
+    <Spinner
+        android:id="@+id/spinner_del_state"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+
+    <TextView
+        android:id="@+id/universityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:text="Choose University" />
+
+    <Spinner
+        android:id="@+id/spinner_del_university"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+
+    <TextView
+        android:id="@+id/courseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:text="Choose Course" />
+
+    <Spinner
+        android:id="@+id/spinner_del_course"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <Button
+        android:id="@+id/fetchButton"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:onClick="fetch"
+        android:text="Fetch" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="Delete" />
+
+</LinearLayout>

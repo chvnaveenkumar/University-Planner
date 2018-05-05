@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.s530742.universityplanneradmin.activity_modify_uni_details">
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:onClick="signout"
+        android:text="Logout" />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Welcome" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="University Planner"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/StateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Choose State" />
+
+    <Spinner
+        android:id="@+id/spinner_state"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/universityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Choose University" />
+
+    <Spinner
+        android:id="@+id/spinner_university"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/courseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Choose Course" />
+
+    <Spinner
+        android:id="@+id/spinner_course"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="search"
+        android:text="Search" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+
+        <TextView
+            android:id="@+id/greText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="GRE Score: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/greEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="GRE Value"
+            android:digits="0123456789"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/toeflText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="TOEFL Score: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/toeflEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="TOEFL Value"
+            android:digits="0123456789."
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/ieltstextView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="IELTS Score: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ieltsEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ielts Value"
+            android:digits="0123456789."
+            android:inputType="numberDecimal" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="updateButton"
+        android:text="Update" />
+
+</LinearLayout>
